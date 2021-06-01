@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a45e315257.js"
+      crossorigin="anonymous"
+    ></script>
     <!--le titre de ma page -->
     <title>Reservia</title>
     <!-- Icone de l'onglet -->
@@ -14,23 +18,52 @@
     <!--corp de la page-->
     <header>
       <!--en tête de la page web-->
-      <img src="Reservia.png" alt="logo du site" srcset="Reservia.svg"/>
+      <img src="Reservia.png" alt="logo du site" srcset="Reservia.svg" />
       <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-      <p>en plein centre ville ou en pleine nature</p>
-      <nav>
+      <p>En plein centre ville ou en pleine nature</p>
+      <!--liens de navigation principaux-->
+      <nav class="menu">
         <ul>
           <li><a href="#">Hébergement</a></li>
           <li><a href="#">Activités</a></li>
           <li><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
-      
-
-
-
-
-      
+      <!--barre de recherche-->
+      <form action="traitement.php" method="post">
+        <div>
+          <label for="destination"><i class="fas fa-map-marker-alt"></i></label>
+          <input
+            type="search"
+            name="destination"
+            id="destination"
+            placeholder="marseille,France"
+          />
+          <button>Rechercher</button>
+        </div>
+      </form>
+      <!--barre de filtre-->
+      <nav class="filtre">
+        <ul>
+          <li>filtre</li>
+          <li><a href="#Économique">Économique</a></li>
+          <li><a href="#Familial">Familial</a></li>
+          <li><a href="#Romantique">Romantique</a></li>
+          <li><a href="#Animaux autorisés">Animaux autorisés</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!--premier bloc hebergements-->
+    <section id="hebergements"></section>
+
+    <!-- deuxième bloc populaire-->
+    <section id="populaires"></section>
+
+    <!--troisième partie du site activites-->
+    <section id="activites"></section>
+
+    <!--pied de page-->
+    <footer></footer>
   </body>
 </html>
